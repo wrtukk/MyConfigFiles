@@ -19,6 +19,9 @@ alias h="history"
 alias cl="clear"
 alias n="nano"
 alias v="vim"
+alias du="du -sh"
+alias free="free -m"
+alias df="df -h"
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
