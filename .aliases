@@ -22,6 +22,10 @@ alias v="vim"
 alias du="du -sh"
 alias free="free -m"
 alias df="df -h"
+alias ins="sudo apt-get install"
+alias upd="sudo apt-get update"
+alias upg="sudo apt-get upgrade"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -39,7 +43,7 @@ alias la="ls -laF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
+alias lsdu="ls -la && du *"
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
 
