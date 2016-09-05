@@ -92,11 +92,11 @@ else
 fi;
 
 # Highlight the user name when logged in as root.
-if [[ "${USER}" == "root" ]]; then
+#if [[ "${USER}" == "root" ]]; then
 	userStyle="${blue}";
-else
+#else
 	userStyle="${blue}";
-fi;
+#fi;
 
 # Highlight the hostname when connected via SSH.
 if [[ "${SSH_TTY}" ]]; then
@@ -108,9 +108,9 @@ fi;
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
-PS1+="\[${userStyle}\]\u"; # username
-PS1+="\[${blue}\]@";
-PS1+="\[${hostStyle}\]\h"; # host
+PS1+="\u"; # username
+PS1+="@";
+PS1+="\h"; # host
 PS1+="\[${white}\] ";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
