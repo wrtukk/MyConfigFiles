@@ -22,7 +22,8 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
+set backspace=indent,eol,start        " more powerful backspacing
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -46,6 +47,14 @@ endif
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
+  set nobackup          " Don't keep a backup file
+    set linebreak         " Don't wrap words by default
+    set textwidth=0       " Don't wrap lines by default
+    set history=50        " keep 50 lines of command line history
+      set ruler             " show the cursor position all the time
+      set showmatch         " Show matching brackets.
+     set incsearch         " Incremental search
+    
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
