@@ -14,6 +14,15 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 #alias p="cd ~/projects"
 alias g="git"
+
+
+
+alias gitlg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+
+
+
 alias h="history"
 #alias j="jobs"
 alias cl="clear"
@@ -57,3 +66,4 @@ alias egrep='egrep --color=auto'
 alias sudo='sudo '
 
 #alias reload="exec $SHELL -l"
+alias sl=la
