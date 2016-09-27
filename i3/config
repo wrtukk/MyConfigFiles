@@ -242,7 +242,8 @@ bindsym $mod+button3 floating toggle
     bindsym mod1+s exec --no-startup-id gksu software-center
     bindsym mod1+q exec --no-startup-id qbittorrent
 
-
+bindsym mod1+m exec --no-startup-id mate-mouse-properties
+bindsym mod1+shift+p exec --no-startup-id mate-power-manager
 
 
 
