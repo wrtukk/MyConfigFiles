@@ -215,7 +215,7 @@ bar {
 
 exec_always --no-startup-id feh --bg-scale /home/my/Pictures/Sea.png
 #exec --no-startup-id nm-applet #The WIFI Applet
-#exec --no-startup-id mate-power-manager
+exec --no-startup-id mate-power-manager
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank
@@ -241,6 +241,8 @@ bindsym $mod+button3 floating toggle
     bindsym mod1+v exec --no-startup-id vlc
     bindsym mod1+s exec --no-startup-id gksu software-center
     bindsym mod1+q exec --no-startup-id qbittorrent
+
+	bindsym mod4+p exec --no-startup-id packettracer
 
 bindsym mod1+m exec --no-startup-id mate-mouse-properties
 bindsym mod1+shift+p exec --no-startup-id mate-power-manager
