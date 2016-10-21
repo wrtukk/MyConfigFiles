@@ -215,7 +215,7 @@ bar {
 
 exec_always --no-startup-id feh --bg-scale /home/my/Pictures/Sea.png
 #exec --no-startup-id nm-applet #The WIFI Applet
-exec --no-startup-id mate-power-manager
+#exec --no-startup-id mate-power-manager
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s noblank
