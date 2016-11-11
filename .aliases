@@ -23,6 +23,13 @@ alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 
 
 
+
+alias pass="openssl aes-256-cbc -in"
+alias unpass="openssl aes-256-cbc -d -in"
+
+alias zpass="zip --encrypt"
+
+
 alias h="history"
 #alias j="jobs"
 alias cl="clear"
